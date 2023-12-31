@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./hotel/lib/animate/animate.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>home</title>
+  </head>
+  <body>
+    <nav class="display_flex justify-content-between px-3">
+      <div class="contact_nav  d-flex">
+        <a href="">
+          <i class="fa fa-phone"></i>
+          <span> Call : +216 123455678990 </span>
+        </a>
+        <a href="">
+          <i class="fa fa-envelope"></i>
+          <span> Email : agencescrum@gmail.com </span>
+        </a>
+        <a href="">
+          <i class="fa fa-map-marker"></i>
+          <span> Monastir </span>
+        </a>
+      </div>
+      <div  class="display_flex gap-1 bigmoney">
+        <div id="google_translate_element"></div>
+        <select name="crypto" id="crypto" class="form-select w-auto money">
+          <option value="">EUR</option>
+          <option value="" selected>USD</option>
+          <option value="">DT</option>
+        </select>
+      </div>
+    </nav>
+
+    <header class="display_flex">
+      <img src="" alt="logo" style="position: relative; top: -5px" />
+      <ul>
+        <li><a href="index.html">home</a></li>
+        <li><a href="/main/hotel/index.html">hotels</a></li>
+        <li><a href="about.html">about us</a></li>
+        <li><a href="contact.html">contact us </a></li>
+      </ul>
+      <ul class="login">
+        <li><a href="login.html">login</a></li>
+        <li><a href="register.html">register</a></li>
+      </ul>
+      <span class="display_flex" style="position: relative; top: -5px">
+        <input type="text" placeholder="Search" />
+        <button>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="16"
+            width="16"
+            viewBox="0 0 512 512"
+          >
+            <path
+              d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 
+      376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 
+      144 144 0 1 0 0 288z"
+            />
+          </svg>
+        </button>
+      </span>
+    </header>
+    
+    <main class="hero ">
+      <h1 class="animated slideInDown">
+        best place to find and explore <br />
+        that all you need
+      </h1>
+      <p class="animated slideInDown">
+        Find Best Place, Restaurant, Hotel, Real State and many more think in
+        just One click
+      </p>
+      <div class="input-group animated slideInUp">
+        <span class="input-group-text">Need?</span>
+        <input
+          type="text"
+          aria-label="First name"
+          class="form-control"
+          placeholder="EX: Place, Restaurant, Hotel"
+        />
+        <span class="input-group-text"> location</span>
+        <input
+          type="text"
+          aria-label="Last name"
+          class="form-control"
+          placeholder="EX: Djerba, Mahdia, Sousse"
+        />
+        <input
+          type="submit"
+          aria-label="submit"
+          class="btn display_flex "
+          value="submit"
+        />
+      </div>
+
+      <div class="carre-container">
+        <div class="carre1">
+          <div class="topics-icon">
+            <i class="fa fa-utensils"></i>
+          </div>
+          <h3><a href="restaurants.html">restaurant</a></h3>
+        </div>
+        <div class="carre2">
+          <div class="topics-icon">
+            <i class="fa fa-map"></i>
+          </div>
+          <h3><a href="#">destination</a></h3>
+        </div>
+        <div class="carre3">
+          <div class="topics-icon">
+            <i class="fa fa-hotel"></i>
+          </div>
+          <h3><a href="hotels.html">hotels</a></h3>
+        </div>
+      </div>
+    </main>
+
+  <section class="book_section ">
+    <div class="container1" style="text-align: center;">
+      <div class="row">
+        <div class="col">
+          <div class="heading_container">
+            <h1 style="text-transform: uppercase;" >
+              Book Now <b style="color: red;">Your Ticket</b>
+            </h1>
+          </div>
+          <form>
+            <div class="form-row d-flex justify-content-center">
+              <div class="form-group col-lg-3">
+                <label for="inputAddress1">Where</label>
+                <input type="text" class="form-control" id="inputAddress1" >
+              </div>
+              <div class="form-group col-lg-3 mx-5">
+                <label for="inputAddress2">To</label>
+                <input type="text" class="form-control" id="inputAddress2">
+              </div>
+              <div class="form-group col-lg-3">
+                <label for="inputEmail4">Email</label>
+                <input type="email" class="form-control" id="inputEmail4">
+              </div>
+            </div>
+            <div class="form-row d-flex justify-content-center ">
+              <div class="form-group col-lg-3">
+                <label for="inputDate">Date</label>
+                <input type="date" class="form-control" id="inputDate" style="text-align: center;">
+              </div>
+              <div class="form-group col-lg-3 mx-5 ">
+                <label for="inputPrice">Price</label>
+                <input type="text" class="form-control" id="inputPrice">
+              </div>
+              <div class="form-group col-lg-3 ">
+                <label for="inputPhone">Phone Number</label>
+                <input type="text" class="form-control" id="inputPhone">
+              </div>
+            </div>
+            <div class="d-flex justify-content-center">
+              <button type="submit" class="btn mt-4">Book Now</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+      <div class="container_about">
+        <div class="row">
+          <div class="col-md-7">
+            <div class="img-box">
+              <video src="/assets/Let's Discover Tunisia  🇹🇳.mp4" autoplay loop muted/>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="detail-box">
+              <div class="heading_container">
+                <h1 align="center">DISCOVER <span style="margin-bottom: 35px;color: red;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">TUNISIA</span></h1>
+              </div>
+              <p style="font-size: 19px;word-spacing: 2px;">
+                "<b style="color: red;"> Tunisia </b> is a picturesque Mediterranean paradise, offering stunning beaches along its azure coastline. 
+From the golden sands of Hammamet to the tranquil shores of Djerba, it's a sun-seeker's dream. Beyond the
+ beaches, diverse landscapes await—rolling hills in the north, the Sahara Desert in the south, and lush
+  oases in between. Historical sites like Carthage and vibrant medinas add cultural richness. Add warm hospitality
+   and delicious cuisine, and Tunisia becomes an irresistible destination for anyone seeking natural beauty and cultural treasures."
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<section>
+  <div class="container-fluid text-center colored">
+      <br><h1>NEWS <b style="color: red;"> AND ARTICLES</b> </h1><br>
+      <h5 style="color: grey;">Always upto date with our latest News and Article</h5><br><br>
+      <div class="row gap-5 wrapper">
+        <div class="col-sm-3 card  ">
+          <div class="thumbnail">
+            <img src="10470079.webp" width="300" height="300"><br>
+            <a ><strong>how to find your desired place more quickly</strong></a><br>
+            <a style="color: gray;">posted by </a>
+             <a><strong> ADMIN </strong> </a> 
+             <a style="color: grey;">  |  March 2018</a>
+             <br><br>
+            <p style="color: grey;">lorem ipsum dolor sit amet , consecteur de adipicing elit , sed do euimod tempore incididunt ut labore et dolare magna</p>
+          </div>
+        </div>
+      <div class="col-sm-3 card">
+        <div class="thumbnail">
+            <img src="10470079.webp" width="300" height="300"><br>
+            <a ><strong>how to find your desired place more quickly</strong></a><br>
+            <a style="color: grey;">posted by </a> <a><strong> ADMIN </strong> </a> <a style="color: grey;">  |  March 2018</a><br><br>
+            <p style="color: grey;">lorem ipsum dolor sit amet , consecteur de adipicing elit , sed do euimod tempore incididunt ut labore et dolare magna</p>
+          </div>
+      </div>
+         <div class="col-sm-3 card">
+            <div class="thumbnail">
+                <img src="10470079.webp" width="300" height="300"><br>
+                <a ><strong>how to find your desired place more quickly</strong></a><br>
+                <a style="color: grey;">posted by </a> <a><strong> ADMIN </strong> </a> <a style="color: grey;">  |  March 2018</a><br><br>
+                <p style="color: grey;">lorem ipsum dolor sit amet , consecteur de adipicing elit , sed do euimod tempore incididunt ut labore et dolare magna</p>
+              </div>
+         </div>
+      </div>
+  </div> 
+</section>
+  
+ <section>
+        <h1 style="text-align: center;font-size: 40px;">POPULAR <b style="color: red;"> PLACES</b></h1><br>
+   <h5 style="color: rgb(124, 124, 124) ; text-align: center;">Explore new place, food, culture arround the world and many more</h5><br><br>
+      <div class="card-deck wrapper gap-5 ">
+  <div class="card col-3">
+    <img class="card-img-top" src="..." alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    </div>
+  </div>
+
+  <div class="card col-3">
+    <img class="card-img-top" src="..." alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title"></h5>
+      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    </div>
+  </div>
+
+  <div class="card col-3">
+    <img class="card-img-top" src="..." alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    </div>
+  </div>
+</div><br>
+      <div class="card-deck wrapper gap-5 ">
+  <div class="card col-3">
+    <img class="card-img-top" src="..." alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    </div>
+  </div>
+
+  <div class="card col-3">
+    <img class="card-img-top" src="..." alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    </div>
+  </div>
+
+  <div class="card col-3">
+    <img class="card-img-top" src="..." alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    </div>
+  </div>
+</div>
+</section>
+<section>
+    <h1 align="center">HOW <b style="color: red;"> IT WORKS</b></h1><br>
+    <h5 align="center" style="color: grey;">Learn more about how our website works</h5><br><br>
+    <div class=" wrapper gap-5">
+          <div class="line"></div>
+            <div class=" card col-3 single-service ">
+                <div class="social"><img src="/main/assets/Animation - 1703442497294.gif" height="150px" width="200px"> </div>
+        <h2 align="center">Start searshing your destination</h2>
+        <p style="color: grey; text-align: center;font-size: 18px;" class="paragraph"> start by researching your destination thoroughly Understand the local customs, weather conditions, and any travel advisories that might affect your trip. Having a clear idea of what you want to explore or 
+          experience will help streamline your booking process..</p>
+        <div align="center" class="botoom-btn" onclick="show()"> <button>Read More</button></div>
+
+            </div>
+            <div class=" card col-3 single-service">
+                <div class="social"><i class="fa fa-laptop"></i> </div>
+        <h2 align="center">choose what to do</h2>
+        <p style="color: grey; text-align: center;font-size: 18px;" class="paragraph">lorem ipsum dolor sit amet , consecte adipicing elit , sed do eiusmod tempor incididunt ut laboremagna aliqua.</p>
+        <div align="center" class="botoom-btn"> <button>Read More</button></div>
+
+            </div>
+            <div class="card col-3 single-service">
+                <div class="social"><i class="fa fa-laptop"></i> </div>
+        <h2 align="center">choose what to do</h2>
+        <p style="color: grey; text-align: center;font-size: 18px;" class="paragraph">lorem ipsum dolor sit amet , consecte adipicing elit , sed do eiusmod tempor incididunt ut laboremagna aliqua.</p>
+        <div align="center" class="botoom-btn"> <button>Read More</button></div>
+      </div>
+  </section> 
+  <section>
+       <div>
+        <center>
+            <h1>CLIENTS <b style="color: red;"> REVIEWS</b> </h1>
+            <h5>What our client say about us</h5>
+        </center>
+    </div>
+
+    <!-- Carousel -->
+    <div>
+        <div class="Slider" style="position: relative; right: 4.4%;">
+            <div class="Profile HiddenProfile">
+                <div class="Profile_Main">
+                    <center>
+                        <div class="user" style="background-image: url('/assets/323440412_498325605551197_5891008266074624451_n.jpg');"></div>
+                    </center>
+                    <div>
+                        <h2>Tom Leakar</h2>
+                        <p>London, UK</p>
+                    </div>
+                </div>
+    
+                <div class="Profile_Description">
+                    desc1
+                </div>
+            </div>
+            
+            <div class="Profile HiddenProfile">
+                <div class="Profile_Main">
+                    <center>
+                        <div class="user" style="background-image: url('https://via.placeholder.com/400x200');"></div>
+                    </center>
+    
+                    <div>
+                        <h2>Tom Leakar</h2>
+                        <p>London, UK</p>
+                    </div>
+                </div>
+    
+                <div class="Profile_Description">
+                    desc2
+                </div>
+            </div>
+            
+
+            <div class="Profile CurrentProfile">
+                <div class="Profile_Main">
+                    <center>
+                        <div class="user" style="background-image: url('https://via.placeholder.com/400x200');"></div>
+                    </center>
+    
+                    <div>
+                        <h2>Tom Leakar</h2>
+                        <p>London, UK</p>
+                    </div>
+                </div>
+    
+                <div class="Profile_Description">
+                    desc3
+                </div>
+            </div>
+
+            <div class="Profile HiddenProfile">
+                <div class="Profile_Main">
+                    <center>
+                        <div class="user" style="background-image: url('https://via.placeholder.com/400x200');"></div>
+                    </center>
+    
+                    <div>
+                        <h2>Tom Leakar</h2>
+                        <p>London, UK</p>
+                    </div>
+                </div>
+    
+                <div class="Profile_Description">
+                    desc4
+                </div>
+            </div>
+            
+            <div class="Profile HiddenProfile">
+                <div class="Profile_Main">
+                    <center>
+                        <div class="user" style="background-image: url('https://via.placeholder.com/400x200');"></div>
+                    </center>
+    
+                    <div>
+                        <h2>Tom Leakar</h2>
+                        <p>London, UK</p>
+                    </div>
+                </div>
+    
+                <div class="Profile_Description">
+                    desc5
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Stats -->
+    <div class="Stats" id="stats">
+
+        <!-- change "data-val" to modify values -->
+
+        <div>
+            <center>
+                <h1 class="num", data-val="90"></h1>
+            </center>
+
+            
+            <h3>Destinations</h3>
+        </div>
+
+        <div>
+            <center>
+                <h1 class="num", data-val="40"></h1>
+            </center>
+            
+            <h3>Hotels</h3>
+        </div>
+
+        <div>
+            <center>
+                <h1 class="num", data-val="65"></h1>
+            </center>
+            <h3>Visitors</h3>
+        </div>
+
+        <div>
+            <center>
+                <h1 class="num", data-val="50"></h1>
+            </center>
+            <h3>Happy Clients</h3>
+        </div>
+    </div>
+  </section>
+
+  <footer>
+        <div class="container">
+        <div class="navbar-container">
+            <div class="navbar">
+                <a href="index.html">Home</a>
+                <a href="/main/hotel/index.html">Hotels</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+            <div class="line"></div>
+           </div>
+        <div class="contact-info">
+               <p><i class="fas fa-phone"></i> Phone: +216 1234567890</p>
+            <div class="social-media wrapper">
+                <a href="#" ><i class="fab fa-facebook"></i> Facebook</a>
+                <a href="#" ><i class="fab fa-twitter"></i> Twitter</a>
+                <a href="#" ><i class="fab fa-instagram"></i> Instagram</a>
+            </div>
+        </div>
+    </div>
+          <!-- Back to Top -->
+      <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"
+        ><i class="bi bi-arrow-up"></i
+      ></a>
+  </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="gsap.js"></script>
+    <script src="script.js"></script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script src="./hotel/js/main.js"></script>
+  </body>
+</html>

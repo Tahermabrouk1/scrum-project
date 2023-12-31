@@ -1,0 +1,362 @@
+:root {
+    --primary: #FEA116;
+    --light: #F1F8FF;
+    --dark: #0F172B;
+}
+
+.fw-medium {
+    font-weight: 500 !important;
+}
+
+.fw-semi-bold {
+    font-weight: 600 !important;
+}
+
+.back-to-top {
+    position: fixed;
+    display: none;
+    right: 45px;
+    bottom: 45px;
+    z-index: 99;
+}
+
+
+/*** Spinner ***/
+#spinner {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .5s ease-out, visibility 0s linear .5s;
+    z-index: 99999;
+}
+
+#spinner.show {
+    transition: opacity .5s ease-out, visibility 0s linear 0s;
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/*** Button ***/
+.btn {
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: .5s;
+}
+
+.btn.btn-primary,
+.btn.btn-secondary {
+    color: #FFFFFF;
+}
+
+.btn-square {
+    width: 38px;
+    height: 38px;
+}
+
+.btn-sm-square {
+    width: 32px;
+    height: 32px;
+}
+
+.btn-lg-square {
+    width: 48px;
+    height: 48px;
+}
+
+.btn-square,
+.btn-sm-square,
+.btn-lg-square {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+    border-radius: 2px;
+}
+
+
+
+
+/*** Header ***/
+.carousel-caption {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(15, 23, 43, .7);
+    z-index: 1;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 10%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 3rem;
+    height: 3rem;
+}
+
+@media (max-width: 768px) {
+    #header-carousel .carousel-item {
+        position: relative;
+        min-height: 450px;
+    }
+    
+    #header-carousel .carousel-item img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.page-header {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.page-header-inner {
+    background: rgba(15, 23, 43, .7);
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    color: var(--light);
+}
+
+.booking {
+    position: relative;
+    margin-top: -100px !important;
+    z-index: 1;
+}
+
+
+/*** Section Title ***/
+.section-title {
+    position: relative;
+    display: inline-block;
+}
+
+.section-title::before {
+    position: absolute;
+    content: "";
+    width: 45px;
+    height: 2px;
+    top: 50%;
+    left: -55px;
+    margin-top: -1px;
+    background: var(--primary);
+}
+
+.section-title::after {
+    position: absolute;
+    content: "";
+    width: 45px;
+    height: 2px;
+    top: 50%;
+    right: -55px;
+    margin-top: -1px;
+    background: var(--primary);
+}
+
+.section-title.text-start::before,
+.section-title.text-end::after {
+    display: none;
+}
+
+
+/*** Service ***/
+.service-item {
+    height: 320px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background: #FFFFFF;
+    box-shadow: 0 0 45px rgba(0, 0, 0, .08);
+    transition: .5s;
+}
+
+.service-item:hover {
+    background: var(--primary);
+}
+
+.service-item .service-icon {
+    margin: 0 auto 30px auto;
+    width: 65px;
+    height: 65px;
+    transition: .5s;
+}
+
+.service-item i,
+.service-item h5,
+.service-item p {
+    transition: .5s;
+}
+
+.service-item:hover i,
+.service-item:hover h5,
+.service-item:hover p {
+    color: #FFFFFF !important;
+}
+
+
+* {
+  margin-top: 1px;
+  box-sizing: border-box;
+}
+body {
+  top: 0px !important;
+  width: 100%;
+}
+.goog-te-banner-frame.skiptranslate {
+  display: none !important;
+}
+header {
+  justify-content: space-around;
+  background-color: #FEA116;
+  height: 70px;
+  position: sticky;
+  width: 100%;
+}
+.VIpgJd-ZVi9od-ORHb-OEVmcd {
+  display: none;
+}
+#google_translate_element span {
+  display: none;
+}
+.goog-te-gadget .goog-te-combo {
+  border-radius: 6px;
+  font-size: 13px;
+  position: relative;
+  padding: 10px;
+  top: 5px;
+  border: 1px solid grey;
+  margin: -15px 0 !important;
+}
+
+.goog-te-gadget {
+  color: #ffffff !important;
+}
+section {
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  padding: 30px;
+  margin: 155px auto;
+  overflow: hidden;
+  width: 1300px;
+  background-color: white;
+}
+header ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  justify-content: center;
+}
+header ul li {
+  display: flex;
+  margin: 0px 15px;
+  font-size: 18px;
+}
+header ul li a {
+  text-decoration: none;
+  list-style: none;
+  color: rgba(0, 0, 0, 0.777);
+  transition: all 0.3s;
+  text-transform: capitalize;
+  padding: 10px;
+  border-radius: 10%;
+}
+
+header ul li a:hover {
+  background-color: aliceblue;
+}
+.bigmoney {
+  justify-content: end;
+}
+.money {
+  border: 1px solid black;
+  margin-right: 1%;
+  font-size: 13px;
+}
+
+span input {
+  padding: 5px 25px 5px 10px;
+  border: none;
+  outline: none;
+  position: relative;
+  border-radius: 5px;
+}
+span button {
+  border: 1px solid rgba(0, 0, 0, 0.382);
+  outline: none;
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  right: 0px;
+}
+nav {
+  margin-bottom: 15px;
+  background-color: white;
+}
+
+.contact_nav a {
+  cursor: pointer;
+  text-decoration: none;
+}
+.contact_nav a span {
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+  margin: 0 5px;
+}
+.contact_nav a i {
+  cursor: pointer;
+  text-decoration: none;
+  color: #FEA116;
+  font-size: 15px;
+}
+
+.display_flex {
+  display: flex;
+  align-items: center;
+}
+svg {
+  cursor: pointer;
+  margin: auto;
+}
+
+.container {
+  background-color: white;
+  text-align: center;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);
+  margin-top: 3%;
+}
+
+.navbar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #f1f0f0;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: grey;
+  margin: 0 8px;
+  transition: all 0.3s ease-in-out;
+}
+.navbar a:hover {
+  border-bottom: 1px solid red;
+  color: red;
+}
